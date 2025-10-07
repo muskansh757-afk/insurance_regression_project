@@ -1,0 +1,27 @@
+
+Call:
+lm(formula = log_charges ~ age + sex + bmi + children + smoker + 
+    region, data = train)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.14739 -0.21762 -0.04584  0.09002  2.11890 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      7.016253   0.086857  80.779  < 2e-16 ***
+age              0.033395   0.001047  31.880  < 2e-16 ***
+sexmale         -0.073590   0.029164  -2.523 0.011790 *  
+bmi              0.015285   0.002480   6.162 1.07e-09 ***
+children         0.110214   0.011804   9.337  < 2e-16 ***
+smokeryes        1.557516   0.035248  44.187  < 2e-16 ***
+regionnorthwest -0.102579   0.041438  -2.475 0.013484 *  
+regionsoutheast -0.149333   0.041840  -3.569 0.000377 ***
+regionsouthwest -0.142095   0.041508  -3.423 0.000646 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4414 on 927 degrees of freedom
+Multiple R-squared:  0.7682,	Adjusted R-squared:  0.7662 
+F-statistic:   384 on 8 and 927 DF,  p-value: < 2.2e-16
+
